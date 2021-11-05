@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 require("./db/db.config");
+require("dotenv").config();
 const RateLimit = require("./routes/ratelimit");
 
 const port = process.env.PORT || 8080;
